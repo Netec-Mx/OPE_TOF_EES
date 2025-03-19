@@ -9,7 +9,7 @@ Al finalizar la práctica, serás capaz de:
 
 ## Duración aproximada
 
-- 30 minutos.
+- 30 minutos
 
 ---
 
