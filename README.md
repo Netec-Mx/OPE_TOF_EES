@@ -10,19 +10,19 @@ Bienvenido a la **Plataforma de Laboratorios** del curso **Titulo curso**. Aquí
 
 Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia práctica. Haz clic en los enlaces para comenzar.
 
-01. **[Laboratorio 1: Instalación y Configuración de OpenTofu en Azure](/Capítulo1/lab1.md)**
+01. **[Laboratorio 1: Instalación y Configuración de OpenTofu en Azure](./Capítulo1/lab1.md)**
    - **Descripción**: Configuración inicial y despliegue de OpenTofu en Azure sobre Windows.
    - ⏱️ **Duración estimada**: 30 minutos
 
-02. **[Laboratorio 2: Creación de Variables, Salidas y Recursos en OpenTofu](/Capítulo1/lab2.md)**
+02. **[Laboratorio 2: Creación de Variables, Salidas y Recursos en OpenTofu](./Capítulo2/lab2.md)**
    - **Descripción**: Uso de variables, outputs y aprovisionamiento de recursos con OpenTofu.
    - ⏱️ **Duración estimada**: 40 minutos
 
-03. **[Laboratorio 3: Gestión de Cambios en la Infraestructura con OpenTofu](/Capítulo1/lab3.md)**
+03. **[Laboratorio 3: Gestión de Cambios en la Infraestructura con OpenTofu](./Capítulo1/lab3.md)**
    - **Descripción**: Control de modificaciones, versionado y seguimiento de cambios en OpenTofu.
    - ⏱️ **Duración estimada**: 40 minutos
 
-04. **[Laboratorio 4: Administración de Dependencias entre Módulos en OpenTofu](/Capítulo1/lab4.md)**
+04. **[Laboratorio 4: Administración de Dependencias entre Módulos en OpenTofu](./Capítulo1/lab4.md)**
    - **Descripción**: Organización modular y gestión de relaciones entre recursos en OpenTofu.
    - ⏱️ **Duración estimada**: 60 minutos
 ---
