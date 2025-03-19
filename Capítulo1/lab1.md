@@ -13,7 +13,7 @@ Al finalizar la práctica, serás capaz de:
 
 ---
 
-**[⬅️ Atrás](/Capítulo4/lab4.md)** | **[Lista General](/README.md)** | **[Siguiente ➡️](/Capítulo2/lab2.md)**
+**[⬅️ Atrás](https://netec-mx.github.io/OPE_TOF_EES/Cap%C3%ADtulo4/lab4.html)** | **[Lista General](https://netec-mx.github.io/README.md)** | **[Siguiente ➡️](https://netec-mx.github.io/OPE_TOF_EES/Cap%C3%ADtulo2/lab2.html)**
 
 ## Instrucciones
 
@@ -176,6 +176,6 @@ En esta práctica, hemos revisado los requisitos previos, instalado OpenTofu y l
 
 ---
 
-**[⬅️ Atrás](/Capítulo4/lab4.md)** | **[Lista General](/README.md)** | **[Siguiente ➡️](/Capítulo2/lab2.md)**
+**[⬅️ Atrás](https://netec-mx.github.io/OPE_TOF_EES/Cap%C3%ADtulo4/lab4.html)** | **[Lista General](https://netec-mx.github.io/README.md)** | **[Siguiente ➡️](https://netec-mx.github.io/OPE_TOF_EES/Cap%C3%ADtulo2/lab2.html)**
 
 ---

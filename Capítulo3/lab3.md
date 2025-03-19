@@ -13,7 +13,7 @@ Al finalizar la práctica, serás capaz de:
 
 ---
 
-**[⬅️ Atrás](/Capítulo2/lab2.md)** | **[Lista General](/README.md)** | **[Siguiente ➡️](/Capítulo4/lab4.md)**
+**[⬅️ Atrás](https://netec-mx.github.io/OPE_TOF_EES/Cap%C3%ADtulo2/lab2.html)** | **[Lista General](https://netec-mx.github.io/README.md)** | **[Siguiente ➡️](https://netec-mx.github.io/OPE_TOF_EES/Cap%C3%ADtulo4/lab4.html)**
 
 ## Instrucciones
 
@@ -172,6 +172,6 @@ En esta práctica, aplicamos cambios a la infraestructura con OpenTofu, analizam
 
 ---
 
-**[⬅️ Atrás](/Capítulo2/lab2.md)** | **[Lista General](/README.md)** | **[Siguiente ➡️](/Capítulo4/lab4.md)**
+**[⬅️ Atrás](https://netec-mx.github.io/OPE_TOF_EES/Cap%C3%ADtulo2/lab2.html)** | **[Lista General](https://netec-mx.github.io/README.md)** | **[Siguiente ➡️](https://netec-mx.github.io/OPE_TOF_EES/Cap%C3%ADtulo4/lab4.html)**
 
 ---

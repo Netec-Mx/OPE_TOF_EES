@@ -13,7 +13,7 @@ Al finalizar la práctica, serás capaz de:
 
 ---
 
-**[⬅️ Atrás](/Capítulo1/lab1.md)** | **[Lista General](/README.md)** | **[Siguiente ➡️](/Capítulo3/lab3.md)**
+**[⬅️ Atrás](https://netec-mx.github.io/OPE_TOF_EES/Cap%C3%ADtulo1/lab1.html)** | **[Lista General](https://netec-mx.github.io/README.md)** | **[Siguiente ➡️](https://netec-mx.github.io/OPE_TOF_EES/Cap%C3%ADtulo3/lab3.html)**
 
 ## Instrucciones
 
@@ -171,6 +171,6 @@ En esta práctica, se aprendio a definir variables mediante archivos `.tf`, `.tf
 
 ---
 
-**[⬅️ Atrás](/Capítulo1/lab1.md)** | **[Lista General](/README.md)** | **[Siguiente ➡️](/Capítulo3/lab3.md)**
+**[⬅️ Atrás](https://netec-mx.github.io/OPE_TOF_EES/Cap%C3%ADtulo1/lab1.html)** | **[Lista General](https://netec-mx.github.io/README.md)** | **[Siguiente ➡️](https://netec-mx.github.io/OPE_TOF_EES/Cap%C3%ADtulo3/lab3.html)**
 
 ---

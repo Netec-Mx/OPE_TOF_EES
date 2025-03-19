@@ -2,7 +2,7 @@
 
 **Plataforma de Laboratorios**
 
-Bienvenido a la **Plataforma de Laboratorios** del curso **Titulo curso**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
+Bienvenido a la **Plataforma de Laboratorios** del curso **OpenTofu Essentials**. Aquí podrás explorar diferentes tecnologías a través de prácticas guiadas. ¡Desarrolla tus habilidades y lleva tus conocimientos al siguiente nivel!
 
 ---
 
@@ -25,11 +25,12 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
 04. **[Laboratorio 4: Administración de Dependencias entre Módulos en OpenTofu](/Capítulo1/lab4.md)**
    - **Descripción**: Organización modular y gestión de relaciones entre recursos en OpenTofu.
    - ⏱️ **Duración estimada**: 60 minutos
+
 ---
 
 ## 📬 **Contacto y Más Información**
 
-Si tienes alguna pregunta o necesitas más detalles, no dudes en [contactarnos](mailto:soporte@netec.com). También puedes encontrar más recursos en nuestra [página de recursos](https://netec.com).
+Si tienes alguna pregunta o necesitas más detalles, no dudes en [contactarnos](mailto:soporte@netec.com). También puedes encontrar más recursos en nuestra página de [Netec](https://netec.com).
 
 ---
 
