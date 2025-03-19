@@ -18,11 +18,11 @@ Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia pr
    - **Descripción**: Uso de variables, outputs y aprovisionamiento de recursos con OpenTofu.
    - ⏱️ **Duración estimada**: 40 minutos
 
-03. **[Laboratorio 3: Gestión de Cambios en la Infraestructura con OpenTofu](./Capítulo1/lab3.md)**
+03. **[Laboratorio 3: Gestión de Cambios en la Infraestructura con OpenTofu](./Capítulo3/lab3.md)**
    - **Descripción**: Control de modificaciones, versionado y seguimiento de cambios en OpenTofu.
    - ⏱️ **Duración estimada**: 40 minutos
 
-04. **[Laboratorio 4: Administración de Dependencias entre Módulos en OpenTofu](./Capítulo1/lab4.md)**
+04. **[Laboratorio 4: Administración de Dependencias entre Módulos en OpenTofu](./Capítulo4/lab4.md)**
    - **Descripción**: Organización modular y gestión de relaciones entre recursos en OpenTofu.
    - ⏱️ **Duración estimada**: 60 minutos
 ---
