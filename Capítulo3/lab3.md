@@ -21,7 +21,7 @@ Al finalizar la práctica, serás capaz de:
 
 1. **Abrir Visual Studio Code**
    - Iniciar Visual Studio Code desde el menú de inicio o con el comando `code` en la terminal.
-   - Abrir la terminal integrada con `Ctrl + Ñ` (o `Ctrl + Shift + P` y selecciona `Terminal: New Terminal`).
+   - Abrir la terminal integrada con `Ctrl + Ñ` (o `Ctrl + Shift + P` y seleccionar `Terminal: New Terminal`).
 
 2. **Navegar a la carpeta de trabajo**
    - Asegúrate de estar en la carpeta principal de trabajo `OpenTofuLabs`:
