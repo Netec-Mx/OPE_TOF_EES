@@ -1,4 +1,4 @@
-# Laboratorio 4: Administración de Dependencias entre Módulos en OpenTofu
+# Práctica 4. Administración de dependencias entre módulos en OpenTofu
 
 ## Objetivo de la práctica
 
@@ -17,27 +17,27 @@ Al finalizar la práctica, serás capaz de:
 
 ## Instrucciones
 
-### Tarea 1: Configuración del Entorno
+### Tarea 1: Configuración del entorno
 
 1. **Abrir Visual Studio Code**
-   - Inicia Visual Studio Code desde el menú de inicio o con el comando `code` en la terminal.
-   - Abre la terminal integrada con `Ctrl + Ñ` (o `Ctrl + Shift + P` y selecciona `Terminal: New Terminal`).
+   - Iniciar Visual Studio Code desde el menú de inicio o con el comando `code` en la terminal.
+   - Abrir la terminal integrada con `Ctrl + Ñ` (o `Ctrl + Shift + P` y seleccionar `Terminal: New Terminal`).
 
-2. **Navegar a la Carpeta de Trabajo**
+2. **Navegar a la carpeta de trabajo**
    - Asegúrate de estar en la carpeta principal de trabajo `OpenTofuLabs`:
      ```powershell
      cd OpenTofuLabs
      ```
 
-3. **Crear un Directorio para este Laboratorio**
-   - Crea una carpeta específica para este laboratorio:
+3. **Crear un directorio para este laboratorio**
+   - Crear una carpeta específica para este laboratorio:
      ```powershell
      mkdir Lab4_Dependencias_Modulos
      cd Lab4_Dependencias_Modulos
      ```
 
-4. **Inicializar un Proyecto de OpenTofu**
-   - Ejecuta el siguiente comando para inicializar OpenTofu en la nueva carpeta:
+4. **Inicializar un proyecto de OpenTofu**
+   - Ejecutar el siguiente comando para inicializar OpenTofu en la nueva carpeta:
      ```powershell
      tofu init
      ```
@@ -46,23 +46,23 @@ Al finalizar la práctica, serás capaz de:
 
 ---
 
-### Tarea 2: Creación de Módulos en OpenTofu
+### Tarea 2: Creación de módulos en OpenTofu
 
-1. **Crear la Estructura de Módulos**
-   - Dentro de `Lab4_Dependencias_Modulos`, crea un directorio llamado `modules`:
+1. **Crear la estructura de módulos**
+   - Dentro de `Lab4_Dependencias_Modulos`, crear un directorio llamado `modules`:
      ```powershell
      mkdir modules
      ```
      ![tofu4](../images/lab4/img1.png)
-   - Dentro de `modules`, crea dos carpetas para los módulos:
+   - Dentro de `modules`, crear dos carpetas para los módulos:
      ```powershell
      mkdir modules/resource_group
      mkdir modules/storage_account
      ```
      ![tofu5](../images/lab4/img2.png)
 
-2. **Definir el Módulo de Grupo de Recursos**
-   - Dentro de `modules/resource_group`, crea un archivo `variables.tf`.
+2. **Definir el módulo de grupo de recursos**
+   - Dentro de `modules/resource_group`, crear un archivo `variables.tf`.
      ```hcl
      variable "rg-mod" {
        type        = string
@@ -76,7 +76,7 @@ Al finalizar la práctica, serás capaz de:
      ```
      ![tofu6](../images/lab4/img3.png)
 
-   - Crea un archivo `main.tf` con el siguiente contenido, en la misma carpeta:
+   - Crear un archivo `main.tf` con el siguiente contenido en la misma carpeta:
      ```hcl
      resource "azurerm_resource_group" "rgmodule" {
        name     = var.rg-mod
@@ -93,8 +93,8 @@ Al finalizar la práctica, serás capaz de:
      ```
      ![tofu8](../images/lab4/img5.png)
 
-3. **Definir el Módulo de Almacenamiento**
-   - Dentro de `modules/storage_account`, crea un archivo `variables.tf`.
+3. **Definir el módulo de almacenamiento**
+   - Dentro de `modules/storage_account`, crear un archivo `variables.tf`.
      ```hcl
      variable "sa-name" {
        type        = string
@@ -113,7 +113,7 @@ Al finalizar la práctica, serás capaz de:
      ```
      ![tofu9](../images/lab4/img6.png)
 
-   - Crea un archivo `main.tf` con el siguiente contenido, en la misma carpeta:
+   - Crear un archivo `main.tf` con el siguiente contenido, en la misma carpeta:
      ```hcl
      resource "azurerm_storage_account" "sa-module" {
        name                     = var.sa-name
@@ -125,7 +125,7 @@ Al finalizar la práctica, serás capaz de:
      ```
      ![tofu10](../images/lab4/img7.png)
    
-   - Crea un archivo `outputs.tf`:
+   - Crear un archivo `outputs.tf`:
      ```hcl
      output "sa-out" {
        value = azurerm_storage_account.sa-module.name
@@ -140,9 +140,9 @@ Al finalizar la práctica, serás capaz de:
 ### Tarea 3: Implementación de los Módulos y Gestión de Dependencias
 
 1. **Crear el Archivo Principal `main.tf`**
-   - En `Lab4_Dependencias_Modulos`, crea un archivo `main.tf` con el siguiente contenido:
+   - En `Lab4_Dependencias_Modulos`, crear un archivo `main.tf` con el siguiente contenido:
    ![tofu12](../images/lab4/img9.png)
-   - **NOTA:** Sustituye las letras `X` por letras y numeros aleatorios, en **minusculas**.
+   - **NOTA:** Sustituir las letras `X` por letras y numeros aleatorios, en **minusculas**.
      ```hcl
      provider "azurerm" {
        features {}
@@ -163,8 +163,8 @@ Al finalizar la práctica, serás capaz de:
      ```
      ![tofu13](../images/lab4/img10.png)
 
-2. **Inicializar y Aplicar la Configuración**
-   - Desde la terminal, ejecuta:
+2. **Inicializar y aplicar la configuración**
+   - Desde la terminal, ejecutar:
      ```powershell
      tofu init
      ```
@@ -176,20 +176,20 @@ Al finalizar la práctica, serás capaz de:
 
    - `tofu plan` mostrará las dependencias entre los módulos antes de la ejecución.
 
-3. **Aplicar la Configuración y Verificar Resultados**
-   - Ejecuta:
+3. **Aplicar la configuración y verificar resultados**
+   - Ejecutar:
      ```powershell
      tofu apply -auto-approve
      ```
      ![tofu16](../images/lab4/img13.png)
 
-4. **Validar los Recursos en Azure**
-   - Desde la terminal, ejecuta:
+4. **Validar los recursos en Azure**
+   - Desde la terminal, ejecutar:
      ```powershell
      az group list --output table
      ```
      ![tofu17](../images/lab4/img14.png)
-   - Verifica que se haya creado el Storage Account, desde la terminal, ejecuta:
+   - Verificar que se haya creado el Storage Account, desde la terminal, ejecutar:
      ```powershell
      az resource list --resource-group RGFromModule --output table
      ```
