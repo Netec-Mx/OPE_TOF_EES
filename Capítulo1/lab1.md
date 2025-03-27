@@ -25,14 +25,14 @@ Antes de proceder con la instalación, asegúrate de cumplir con los siguientes 
 
 **IMPORTANTE:** Para esta práctica se usara el Sistema Operativo **Windows**
 
-1. **Sistema Operativo Compatible**: 
+1. **Sistema operativo compatible**: 
    - Verificar que tienes Windows 10. Para hacerlo:
      - Presionar `Win + R`, escribir `winver` y presionar `Enter`.
      - Asegúrate de que la versión es Windows 10.
-2. **Espacio en Disco**: 
+2. **Espacio en disco**: 
    - Comprobar que cuentas con al menos 10 GB de espacio libre:
      - Abrir `Explorador de Archivos` → `Este equipo` → Revisar el almacenamiento disponible.
-3. **Permisos de Administrador**: 
+3. **Permisos de administrador**: 
    - Asegúrate de que tienes permisos de administrador:
      - Hacer clic derecho en `Símbolo del sistema` o `PowerShell` y seleccionar `Ejecutar como administrador`.
 
@@ -84,9 +84,9 @@ Las herramientas de OpenTofu y Azure han sido instaladas correctamente.
 
 ---
 
-### Tarea 3: Configuración Inicial de OpenTofu en Azure desde Visual Studio Code
+### Tarea 3: Configuración inicial de OpenTofu en Azure desde Visual Studio Code
 
-1. **Crear la Carpeta de Trabajo**
+1. **Crear la carpeta de trabajo**
    - Abrir Visual Studio Code.
    - Abrir la terminal (`Ctrl + Ñ`) y ejecutar:
      ```powershell
@@ -101,7 +101,7 @@ Las herramientas de OpenTofu y Azure han sido instaladas correctamente.
    - Una vez abierta, confirma el autor.
    ![tofu6](../images/lab1/img7.png)
 
-2. **Iniciar Sesión en Azure**
+2. **Iniciar sesión en Azure**
    - Desde la terminal de VS Code, ejecutar:
      ```powershell
      az login
@@ -113,7 +113,7 @@ Las herramientas de OpenTofu y Azure han sido instaladas correctamente.
    ![tofu8](../images/lab1/img9.png)
    - Para confirmar la suscripción escribe `1` o ejecuta `Enter`.
 
-3. **Seleccionar la Suscripción Correcta (OPCIONAL)**
+3. **Seleccionar la suscripción correcta (OPCIONAL)**
    - Desde la terminal de VS Code, ejecutar:
      ```powershell
      az account list --output table
@@ -124,7 +124,7 @@ Las herramientas de OpenTofu y Azure han sido instaladas correctamente.
      ```
     - Copiar el `id` de la suscripción deseada y guardarlo en un bloc de notas.
 
-4. **Configurar Credenciales de Azure para OpenTofu**
+4. **Configurar credenciales de Azure para OpenTofu**
    - Crear un archivo de configuración ejecutando; sustituye el paremetro `ID_DE_TU_SUSCRIPCIÓN` por el valor que copiaste:
      ```powershell
      az ad sp create-for-rbac --display-name="tofurole" --role="Contributor" --scopes="/subscriptions/ID_DE_TU_SUSCRIPCIÓN"
@@ -139,6 +139,7 @@ Las herramientas de OpenTofu y Azure han sido instaladas correctamente.
      $env:ARM_SUBSCRIPTION_ID="ID_DE_TU_SUSCRIPCIÓN"
      ```
      ![tofu10](../images/lab1/img11.png)
+     
 5. **Verificar configuración**
    - Dentro de `OpenTofuLabs`, crear una carpeta específica para este laboratorio:
      ```powershell
