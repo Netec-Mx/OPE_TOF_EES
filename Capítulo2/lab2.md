@@ -17,17 +17,17 @@ Al finalizar la práctica, serás capaz de:
 
 ## Instrucciones
 
-### Tarea 1: Configuración del Entorno
+### Tarea 1: Configuración del entorno
 
 1. **Abrir Visual Studio Code**
-   - Abre Visual Studio Code.
-   - Abre la terminal (`Ctrl + Ñ`) y navega a la carpeta de trabajo:
+   - Abrir Visual Studio Code.
+   - Abrir la terminal (`Ctrl + Ñ`) y navegar a la carpeta de trabajo:
      ```powershell
      cd OpenTofuLabs
      ```
 
 2. **Crear un nuevo directorio para el laboratorio**
-   - Dentro de `OpenTofuLabs`, crea una carpeta específica para este laboratorio:
+   - Dentro de `OpenTofuLabs`, crear una carpeta específica para este laboratorio:
      ```powershell
      mkdir Lab2_Variables_Recursos
      cd Lab2_Variables_Recursos
@@ -35,7 +35,7 @@ Al finalizar la práctica, serás capaz de:
      ```
 
 3. **Inicializar un proyecto de OpenTofu**
-   - Ejecuta el siguiente comando para inicializar OpenTofu en la nueva carpeta:
+   - Ejecutar el siguiente comando para inicializar OpenTofu en la nueva carpeta:
      ```powershell
      tofu init
      ```
@@ -46,10 +46,10 @@ Al finalizar la práctica, serás capaz de:
 
 ---
 
-### Tarea 2: Definición de Variables y Salidas
+### Tarea 2: Definición de variables y salidas
 
-1. **Crear y Definir Variables en un Archivo `.tf`**
-   - En `Lab2_Variables_Recursos`, crea un archivo llamado `variables.tf` y agrega el siguiente contenido:
+1. **Crear y definir variables en un archivo `.tf`**
+   - En `Lab2_Variables_Recursos`, crear un archivo llamado `variables.tf` y agregar el siguiente contenido:
      ```hcl
      variable "lab2-rg" {
        description = "Nombre del grupo de recursos en Azure"
@@ -62,9 +62,10 @@ Al finalizar la práctica, serás capaz de:
      }
      ```
      ![tofu3](../images/lab2/img2.png)
-2. **Definir Variables en un Archivo `.tfvars`**
-   - Crea un archivo `terraform.tfvars` en la misma carpeta y agrega el siguiente contenido:
-   **NOTA:** Cambia las letras `X` por numeros o letras aleatorias.
+     
+2. **Definir variables en un archivo `.tfvars`**
+   - Crear un archivo `terraform.tfvars` en la misma carpeta y agregar el siguiente contenido:
+   **NOTA:** Cambiar las letras `X` por numeros o letras aleatorias.
      ```hcl
      lab2-rg  = "lab2-tofu-rg-XX"
      location = "East US""
@@ -72,7 +73,7 @@ Al finalizar la práctica, serás capaz de:
      ![tofu4](../images/lab2/img3.png)
    - Este archivo permite definir valores de variables sin modificar `variables.tf`.
 
-3. **Definir Variables desde la Terminal**
+3. **Definir variables desde la terminal**
    - Puedes sobrescribir valores al ejecutar OpenTofu con parámetros adicionales:
      ```powershell
      tofu plan -var="lab2-rg=CLIResourceGroup" -var="location=Central US"
@@ -80,8 +81,8 @@ Al finalizar la práctica, serás capaz de:
      ![tofu5](../images/lab2/img4.png)
    - Este método es útil para configuraciones temporales o personalizadas sin modificar archivos.
 
-4. **Definir Salidas (Outputs)**
-   - En `Lab2_Variables_Recursos`, crea un archivo llamado `outputs.tf` con el siguiente contenido:
+4. **Definir salidas (Outputs)**
+   - En `Lab2_Variables_Recursos`, crear un archivo llamado `outputs.tf` con el siguiente contenido:
      ```hcl
      output "tofu-rg-out" {
        description = "Nombre del grupo de recursos creado"
@@ -95,8 +96,8 @@ Al finalizar la práctica, serás capaz de:
      ```
      ![tofu6](../images/lab2/img5.png)
 
-5. **Verificar la Sintaxis**
-   - Dentro de la terminal de VS Code, ejecuta:
+5. **Verificar la sintaxis**
+   - Dentro de la terminal de VS Code, ejecutar:
      ```powershell
      tofu fmt
      ```
@@ -106,10 +107,10 @@ Al finalizar la práctica, serás capaz de:
 
 ---
 
-### Tarea 3: Declaración y Creación de Recursos
+### Tarea 3: Declaración y creación de recursos
 
-1. **Crear el Archivo Principal `main.tf`**
-   - En `Lab2_Variables_Recursos`, crea un archivo llamado `main.tf` con el siguiente contenido:
+1. **Crear el archivo principal `main.tf`**
+   - En `Lab2_Variables_Recursos`, crear un archivo llamado `main.tf` con el siguiente contenido:
      ```hcl     
      resource "azurerm_resource_group" "main" {
        name     = var.resource_group_name
@@ -118,8 +119,8 @@ Al finalizar la práctica, serás capaz de:
      ```
      ![tofu7](../images/lab2/img6.png)
 
-2. **Inicializar y Planificar la Configuración**
-   - Desde la terminal de VS Code, ejecuta:
+2. **Inicializar y planificar la configuración**
+   - Desde la terminal de VS Code, ejecutar:
      ```powershell
      tofu init
      tofu plan
@@ -128,23 +129,23 @@ Al finalizar la práctica, serás capaz de:
    - `tofu plan` genera un plan de ejecución sin aplicarlo, mostrando los cambios que se realizarán en Azure.
    ![tofu8](../images/lab2/img7.png)
 
-3. **Aplicar la Configuración y Crear los Recursos**
-   - Si el plan es correcto y no hay errores, ejecuta:
+3. **Aplicar la configuración y crear los recursos**
+   - Si el plan es correcto y no hay errores, ejecutar:
      ```powershell
      tofu apply -auto-approve
      ```
    - OpenTofu desplegará los recursos en Azure.
 
-4. **Verificar la Creación de Recursos**
-   - Una vez completado, revisa los valores de salida ejecutando:
+4. **Verificar la creación de recursos**
+   - Una vez completado, revisar los valores de salida ejecutando:
      ```powershell
      tofu output
      ```
    - Este comando mostrará los valores definidos en `outputs.tf`, confirmando la creación exitosa del recurso.
    ![tofu9](../images/lab2/img8.png)
 
-5. **Validar los Recursos en Azure**
-   - Desde la terminal, ejecuta:
+5. **Validar los recursos en Azure**
+   - Desde la terminal, ejecutar:
      ```powershell
      az group list --output table
      ```
@@ -153,15 +154,15 @@ Al finalizar la práctica, serás capaz de:
 
 **¡TAREA FINALIZADA!**
 
-### Tarea Opcional: Nueva Variable y Aplicación de cambios
+### Tarea Opcional: Nueva variable y aplicación de cambios
 
-**Objetivo:** Crea una nueva variable y usala en un nuevo grupo de recursos.
+**Objetivo:** Crear una nueva variable y usarla en un nuevo grupo de recursos.
 
-- Agrega la siguiente variable llamada `retovar`
-- Agrega el siguiente valor `reto-rg`
-- Deja la ubicación por defecto
-- Crea un nuevo RG que llame el valor de la nueva variable
-- Agrega un output llamado `reto-out` que devuelva el nombre del RG
+- Agregar la siguiente variable llamada `retovar`.
+- Agregar el siguiente valor `reto-rg`.
+- Dejar la ubicación por defecto.
+- Crear un nuevo RG que llame el valor de la nueva variable.
+- Agregar un output llamado `reto-out` que devuelva el nombre del RG.
 
 ---
 
