@@ -10,25 +10,25 @@ Bienvenido a la **Plataforma de Laboratorios** del curso **OpenTofu Essentials**
 
 Cada uno de estos laboratorios está diseñado para ofrecerte una experiencia práctica. Haz clic en los enlaces para comenzar.
 
-01. **[Laboratorio 1: Instalación y Configuración de OpenTofu en Azure](/Capítulo1/lab1.md)**
+01. **[Práctica 1. Instalación y configuración de OpenTofu en Azure](/Capítulo1/lab1.md)**
    - **Descripción**: Configuración inicial y despliegue de OpenTofu en Azure sobre Windows.
    - ⏱️ **Duración estimada**: 30 minutos
 
-02. **[Laboratorio 2: Creación de Variables, Salidas y Recursos en OpenTofu](/Capítulo2/lab2.md)**
+02. **[Práctica 2. Creación de variables, salidas y recursos en OpenTofu](/Capítulo2/lab2.md)**
    - **Descripción**: Uso de variables, outputs y aprovisionamiento de recursos con OpenTofu.
    - ⏱️ **Duración estimada**: 40 minutos
 
-03. **[Laboratorio 3: Gestión de Cambios en la Infraestructura con OpenTofu](/Capítulo3/lab3.md)**
+03. **[Práctica 3. Gestión de cambios en la infraestructura con OpenTofu](/Capítulo3/lab3.md)**
    - **Descripción**: Control de modificaciones, versionado y seguimiento de cambios en OpenTofu.
    - ⏱️ **Duración estimada**: 40 minutos
 
-04. **[Laboratorio 4: Administración de Dependencias entre Módulos en OpenTofu](/Capítulo4/lab4.md)**
+04. **[Práctica 4. Administración de dependencias entre módulos en OpenTofu](/Capítulo4/lab4.md)**
    - **Descripción**: Organización modular y gestión de relaciones entre recursos en OpenTofu.
    - ⏱️ **Duración estimada**: 60 minutos
 
 ---
 
-## 📬 **Contacto y Más Información**
+## 📬 **Contacto y más información**
 
 Si tienes alguna pregunta o necesitas más detalles, no dudes en [contactarnos](mailto:soporte@netec.com). También puedes encontrar más recursos en nuestra página de [Netec](https://netec.com).
 
