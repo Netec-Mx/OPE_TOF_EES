@@ -1,4 +1,4 @@
-# Laboratorio 2: Creación de Variables, Salidas y Recursos en OpenTofu
+# Práctica 2. Creación de variables, salidas y recursos en OpenTofu
 
 ## Objetivo de la práctica
 
