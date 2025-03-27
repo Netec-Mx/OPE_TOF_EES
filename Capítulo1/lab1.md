@@ -1,4 +1,4 @@
-# Laboratorio 1: Instalación y Configuración de OpenTofu en Azure
+# Práctica 1. Instalación y configuración de OpenTofu en Azure
 
 ## Objetivo de la práctica
 
