@@ -72,7 +72,7 @@ Al finalizar la práctica, serás capaz de:
 3. **Modificar la infraestructura**
    - Abrir `main.tf` y cambiar la ubicación del grupo de recursos:
      ```hcl
-     resource "azurerm_resource_group" "main" {
+     resource "azurerm_resource_group" "alter-rg" {
        name     = "TofuManagedGroup"
        location = "West US"
      }
@@ -103,8 +103,8 @@ Al finalizar la práctica, serás capaz de:
 ### Tarea 3: Gestión de versiones y auditoría de cambios
 
 1. **Habilitar el control de versiones**
-   - Inicializae un repositorio Git en la carpeta del laboratorio:
-   - **NOTA:** Esta es una práctica, pero estos archivos normalmente no se suben al repositorio *`**.tfstate, *.tfstate.backup, .tofu/, *.tfplan, *.tfvars, *.tfvars.json, *.log, crash.log`**. Deben agregarse al archivo `.gitignore`
+   - Inicializar un repositorio Git en la carpeta del laboratorio:
+   - NOTA: Esta es una práctica, pero estos archivos normalmente no se suben al repositorio ****.tfstate, *.tfstate.backup, .tofu/, *.tfplan, *.tfvars, *.tfvars.json, *.log, crash.log**. Deben agregarse al archivo .gitignore
      ```powershell
      git init
      git add .
@@ -117,7 +117,7 @@ Al finalizar la práctica, serás capaz de:
 2. **Realizar modificaciones adicionales**
    - Editar `main.tf` para agregar etiquetas al grupo de recursos:
      ```hcl
-     resource "azurerm_resource_group" "main" {
+     resource "azurerm_resource_group" "alter-rg" {
        name     = "TofuManagedGroup"
        location = "West US"
        tags = {
