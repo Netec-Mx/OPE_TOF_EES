@@ -151,6 +151,7 @@ Las herramientas de OpenTofu y Azure han sido instaladas correctamente.
      ```hcl
      provider "azurerm" {
        features {}
+       resource_provider_registrations = "none"
      }
      ```
      ![tofu12](../images/lab1/img13.png)
