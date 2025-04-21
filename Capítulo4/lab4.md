@@ -88,7 +88,7 @@ Al finalizar la práctica, serás capaz de:
    - Crea un archivo `outputs.tf`:
      ```hcl
      output "resource_group_name" {
-       value = azurerm_resource_group.main.name
+       value = azurerm_resource_group.rgmodule.name
      }
      ```
      ![tofu8](../images/lab4/img5.png)
@@ -146,19 +146,20 @@ Al finalizar la práctica, serás capaz de:
      ```hcl
      provider "azurerm" {
        features {}
+       resource_provider_registrations = "none"
      }
      
      module "resource_group" {
        source              = "./modules/resource_group"
-       rg-mod              = "RGFromModule"
-       loc-mod             = "East US"
+       rg-mod               = "RGFromModule"
+       loc-mod              = "East US"
      }
      
      module "storage_account" {
        source                = "./modules/storage_account"
-       sa-name               = "safrommodulexxxx"
-       rg-name               = module.resource_group.resource_group_name
-       loc-name              = "East US"
+       sa-name                = "safrommodulexxxx"
+       rg-name                = module.resource_group.resource_group_name
+       loc-name               = "East US"
      }
      ```
      ![tofu13](../images/lab4/img10.png)
