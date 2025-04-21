@@ -31,7 +31,7 @@ Al finalizar la práctica, serás capaz de:
      ```powershell
      mkdir Lab2_Variables_Recursos
      cd Lab2_Variables_Recursos
-     cp ..\providers.tf .
+     cp ..\Lab1_Init\providers.tf .
      ```
 
 3. **Inicializar un proyecto de OpenTofu**
@@ -113,7 +113,7 @@ Al finalizar la práctica, serás capaz de:
    - En `Lab2_Variables_Recursos`, crear un archivo llamado `main.tf` con el siguiente contenido:
      ```hcl     
      resource "azurerm_resource_group" "main" {
-       name     = var.resource_group_name
+       name     = var.lab2-rg
        location = var.location
      }
      ```
